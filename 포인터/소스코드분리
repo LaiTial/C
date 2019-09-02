@@ -1,0 +1,7 @@
+# C
+* cpu의 바이트 순서 : endian.c
+* pointer_arith3.c : pointer_arith.c
+* swap2.c : swap2.c
+* 실습-영상 처리 : image.c
+* 최소 공배수 AND 최대 공약수 : ret_two.c
+* 학점 변환기 : score_change.c
