@@ -1,0 +1,7 @@
+# C
+# RAND_MAX 수식 분석 : f_rand.c
+# system.c: system.c
+# 동전 던지기 게임 : b_rand.c
+# 실습-소수 찾기 : if_prime.c, main.c
+# 실습-자동차 게임 : disp_car.c, main.c
+# 오일러의 수 e : oile.c
