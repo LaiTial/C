@@ -1,1 +1,9 @@
 # C
+* 10진수를 2진수로 변환시켜서 출력하는 프로그램 : binary.c
+* random walk.c : random walk.c
+* 선택 정렬.c : selection_sort.c
+* 순차 탐색.c : seq_search.c
+* 실습- tic-tac-toe 게임 : board.c, check_win.c, get_wh.c, print_board.c
+* 실습-극장 예약 시스템 : rand.c
+* 실습-최소값 찾기 : mininum.c
+* 이진 탐색.c : binary_search.c
