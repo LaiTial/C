@@ -27,7 +27,7 @@ void insertVertex(graphType* g, int v)
 {
 	if (((g->n) + 1) > MAX_VERTEX)
 	{
-		printf("\n ±×·¡ÇÁ Á¤Á¡ÀÇ °³¼ö¸¦ ÃÊ°úÇÏ¿´½À´Ï´Ù!");
+		printf("\n ê·¸ë˜í”„ ì •ì ì˜ ê°œìˆ˜ë¥¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤!");
 		return;
 	}
 
@@ -40,7 +40,7 @@ void insertEdge(graphType* g, int u, int v)
 
 	if (u >= g->n || v >= g->n)
 	{
-		printf("\n ±×·¡ÇÁ¿¡ ¾ø´Â Á¤Á¡ÀÔ´Ï´Ù!");
+		printf("\n ê·¸ë˜í”„ì— ì—†ëŠ” ì •ì ì…ë‹ˆë‹¤!");
 		return;
 	}
 	node = (graphNode*)malloc(sizeof(graphNode));
@@ -56,7 +56,7 @@ void print_adjList(graphType* g)
 
 	for ( i = 0; i < g->n; i++)
 	{
-		printf("\n\t\tÁ¤Á¡ %cÀÇ ÀÎÁ¢ ¸®½ºÆ®", i + 65);
+		printf("\n\t\tì •ì  %cì˜ ì¸ì ‘ ë¦¬ìŠ¤íŠ¸", i + 65);
 			p = g->adjList_H[i];
 
 			while (p)
@@ -93,7 +93,7 @@ int main(void)
 	insertEdge(G1, 3, 2);
 	insertEdge(G1, 3, 1);
 	insertEdge(G1, 3, 0);
-	printf("\n G1ÀÇ ÀÎÁ¢¸®½ºÆ®");
+	printf("\n G1ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
 	print_adjList(G1);
 
 	for (i = 0; i < 3; i++)
@@ -104,7 +104,7 @@ int main(void)
 	insertEdge(G2, 1, 0);
 	insertEdge(G2, 2, 1);
 	insertEdge(G2, 2, 0);
-	printf("\n G2ÀÇ ÀÎÁ¢¸®½ºÆ®");
+	printf("\n G2ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
 	print_adjList(G2);
 
 	for (i = 0; i < 4; i++)
@@ -114,7 +114,7 @@ int main(void)
 	insertEdge(G3, 1, 3);
 	insertEdge(G3, 1, 2);
 	insertEdge(G3, 2, 3);
-	printf("\n G3ÀÇ ÀÎÁ¢¸®½ºÆ®");
+	printf("\n G3ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
 	print_adjList(G3);
 
 	for (i = 0; i < 3; i++)
@@ -123,7 +123,7 @@ int main(void)
 	insertEdge(G4, 0, 1);
 	insertEdge(G4, 1, 2);
 	insertEdge(G4, 1, 0);
-	printf("\n G4ÀÇ ÀÎÁ¢¸®½ºÆ®");
+	printf("\n G4ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
 	print_adjList(G4);
 
 	for (i = 0; i < 7; i++)
@@ -142,7 +142,7 @@ int main(void)
 	insertEdge(G5, 6, 5);
 	insertEdge(G5, 6, 4);
 	insertEdge(G5, 6, 3);
-	printf("\n G5ÀÇ ÀÎÁ¢¸®½ºÆ®");
+	printf("\n G5ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
 	print_adjList(G5);
 
 	printf("\n");
