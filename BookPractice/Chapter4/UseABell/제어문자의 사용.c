@@ -5,10 +5,10 @@ int main(void)
 	char ch1 = 6, beep = '\a';
 
 
-	printf("º§À» ¿ï·Á¶ó!%c\n", 7);
-	printf("ÇÑ¹ø ´õ ¿ï·Á¶ó!%c\n", beep);
-	printf("¶Ç ÇÑ¹ø ´õ ¿ï·Á¶ó!%c\n", '\a');
-	printf("¶Ç ¿ï·Á¶ó!%c\n", ch1 + 1);
+	printf("ë²¨ì„ ìš¸ë ¤ë¼!%c\n", 7);
+	printf("í•œë²ˆ ë” ìš¸ë ¤ë¼!%c\n", beep);
+	printf("ë˜ í•œë²ˆ ë” ìš¸ë ¤ë¼!%c\n", '\a');
+	printf("ë˜ ìš¸ë ¤ë¼!%c\n", ch1 + 1);
 	printf("New Line%c\n", 10);
 	printf("I Luv Her%c", 13);
 	printf("I hate U");
