@@ -1,4 +1,4 @@
-//°£´ÜÇÑ »ê¼ú °è»ê±â ÇÁ·Î±×·¥
+//ê°„ë‹¨í•œ ì‚°ìˆ  ê³„ì‚°ê¸° í”„ë¡œê·¸ë¨
 
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int main(void)
 
 	while (1)
 	{
-	printf("¼ö½ÄÀ» ÀÔ·ÂÇÏ¼¼¿ä.\n");
+	printf("ìˆ˜ì‹ì„ ì…ë ¥í•˜ì„¸ìš”.\n");
 	printf(">>");
 	scanf("%d %c %d", &a, &cal, &b);
 
@@ -51,7 +51,7 @@ int main(void)
 		result = a * b;
 		break;
 	default:
-		printf("Áö¿øµÇÁö ¾Ê´Â ¿¬»êÀÚÀÔ´Ï´Ù.\n");
+		printf("ì§€ì›ë˜ì§€ ì•ŠëŠ” ì—°ì‚°ìì…ë‹ˆë‹¤.\n");
 		return 0;
 	}
 		printf("%d %c %d = %d\n", a, cal, b, result);
