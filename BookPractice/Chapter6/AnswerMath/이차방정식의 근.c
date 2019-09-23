@@ -1,4 +1,4 @@
-//ÀÌÂ÷¹æÁ¤½ÄÀÇ ±ÙÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥
+//ì´ì°¨ë°©ì •ì‹ì˜ ê·¼ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 
 #include <stdio.h>
 #include <math.h>
@@ -8,11 +8,11 @@ int main(void)
 	int a, b, c;
 	double result1, result2, temp;
 
-	printf("°è¼ö a¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("ê³„ìˆ˜ aë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf("%d", &a);
-	printf("°è¼ö b¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("ê³„ìˆ˜ bë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf("%d", &b);
-	printf("°è¼ö c¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("ê³„ìˆ˜ cë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf("%d", &c);
 
 	temp = b*b - 4.0*a*c;
@@ -20,20 +20,20 @@ int main(void)
 	if (a == 0)
 	{
 		result1 = -c / b;
-		printf("¹æÁ¤½ÄÀÇ ±ÙÀº %fÀÔ´Ï´Ù.\n", result1);
+		printf("ë°©ì •ì‹ì˜ ê·¼ì€ %fì…ë‹ˆë‹¤.\n", result1);
 	}
 
 	else
 	{
 		if ((temp)<0)
 			{
-				printf("½Ç±ÙÀº Á¸ÀçÇÏÁö ¾Ê´Â´Ù.\n");
+				printf("ì‹¤ê·¼ì€ ì¡´ì¬í•˜ì§€ ì•ŠëŠ”ë‹¤.\n");
 			}
 
 		else if (temp == 0)
 		{
 			result1 = -b / (2 * a);
-			printf("¹æÁ¤½ÄÀÇ ±ÙÀº %fÀÔ´Ï´Ù.\n", result1);
+			printf("ë°©ì •ì‹ì˜ ê·¼ì€ %fì…ë‹ˆë‹¤.\n", result1);
 		}
 		
 
@@ -41,8 +41,8 @@ int main(void)
 			{
 				result1 = (-b + sqrt(temp))/(2*a);
 				result2 = (-b - sqrt(temp)) / (2*a);
-				printf("¹æÁ¤½ÄÀÇ ±ÙÀº %fÀÔ´Ï´Ù.\n", result1);
-				printf("¹æÁ¤½ÄÀÇ ±ÙÀº %fÀÔ´Ï´Ù.\n", result2);
+				printf("ë°©ì •ì‹ì˜ ê·¼ì€ %fì…ë‹ˆë‹¤.\n", result1);
+				printf("ë°©ì •ì‹ì˜ ê·¼ì€ %fì…ë‹ˆë‹¤.\n", result2);
 			}
 
 	}
