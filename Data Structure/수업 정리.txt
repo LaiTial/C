@@ -1,0 +1,25 @@
+[First]
+이진 탐색 트리 하나를 주고 그것의 전위, 중위, 후위 탐색 결과를 알아보기
+과제:355p. 예제 7-4 => 그림 7-33으로 수정
+과제 위치: 
+1) DataStructure->TwoSearchTree
+
+[Second]
+그래프를 주고 그것의 인접행렬 알아보기
+그래프를 주고 그것의 인접리스트 표기법 알아보기
+과제: 425p 원 코드에 주어진 그래프(G5)를 추가, int vertex를 char ch로 바꾸어 보기
+과제 위치: 
+1) DataStructure-> CharGraph, 
+2) DataStructure-> NumberGraph
+
+[Third]
+486p 6, 7번 풀어보기
+486p 7번 스택을 그려보기
+486p 6번 너비 우선 탐색을 할시 순서 알아보기
+466p self-test
+488p 12번 크루카 알고리즘 1 적용해 최소 비용 구하기
+과제: ex 8-3, ex 8-4를 각각 만들고, 그 후 두개 합쳐서 한 프로그램에 깊이 우선 탐색과 너비 우선 탐색이 작동되게 만들것
+과제 위치: 
+1) DataStructure->BFS, 
+2) DataStructure->DFS, 
+3) DataStructure-> MakeBFSAndDFSOne
