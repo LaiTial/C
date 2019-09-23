@@ -142,7 +142,7 @@ void insertVertex(graphType* g, int v)
 {
 	if (((g->n) + 1) > MAX_VERTEX)
 	{
-		printf("\n ±×·¡ÇÁ Á¤Á¡ÀÇ °³¼ö¸¦ ÃÊ°úÇÏ¿´½À´Ï´Ù!");
+		printf("\n ê·¸ë˜í”„ ì •ì ì˜ ê°œìˆ˜ë¥¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤!");
 		return;
 	}
 
@@ -155,7 +155,7 @@ void insertEdge(graphType* g, int u, int v)
 
 	if (u >= g->n || v >= g->n)
 	{
-		printf("\n ±×·¡ÇÁ¿¡ ¾ø´Â Á¤Á¡ÀÔ´Ï´Ù!");
+		printf("\n ê·¸ë˜í”„ì— ì—†ëŠ” ì •ì ì…ë‹ˆë‹¤!");
 		return;
 	}
 	node = (graphNode*)malloc(sizeof(graphNode));
@@ -171,7 +171,7 @@ void print_adjList(graphType* g)
 
 	for (i = 0; i < g->n; i++)
 	{
-		printf("\n\t\tÁ¤Á¡ %cÀÇ ÀÎÁ¢ ¸®½ºÆ®", i + 65);
+		printf("\n\t\tì •ì  %cì˜ ì¸ì ‘ ë¦¬ìŠ¤íŠ¸", i + 65);
 		p = g->adjList_H[i];
 
 		while (p)
@@ -192,7 +192,7 @@ void DFS_adjList(graphType* g, int v)
 	LQ->front = NULL;
 	push(v, LQ);
 	g->visited[v] = True;
-	printf("\n±íÀÌ ¿ì¼± Å½»ö >> ");
+	printf("\nê¹Šì´ ìš°ì„  íƒìƒ‰ >> ");
 	printf(" %c", v + 65);
 
 	while (!isEmpty(LQ))
@@ -224,7 +224,7 @@ void BFS_adjList(graphType* g, int v)
 
 	Q = createLinkedQueue();
 	g->visited[v] = True;
-	printf("\n³ĞÀÌ ¿ì¼± Å½»ö >> ");
+	printf("\në„“ì´ ìš°ì„  íƒìƒ‰ >> ");
 	printf(" %c", v + 65);
 	enQueue(Q, v);
 
@@ -272,7 +272,7 @@ int main(void)
 	insertEdge(G9, 6, 5);
 	insertEdge(G9, 6, 4);
 	insertEdge(G9, 6, 3);
-	printf("\n G9ÀÇ ÀÎÁ¢¸®½ºÆ®");
+	printf("\n G9ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
 	print_adjList(G9);
 
 	printf("\n");
