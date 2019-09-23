@@ -1,6 +1,6 @@
 #include "Struct.h"
 
-//¿¬°á ¸®½ºÆ®ÀÇ ÀüÃ¼ ¸Ş¸ğ¸®¸¦ ÇØÁ¦ÇÏ´Â ¿¬»ê
+//ì—°ê²° ë¦¬ìŠ¤íŠ¸ì˜ ì „ì²´ ë©”ëª¨ë¦¬ë¥¼ í•´ì œí•˜ëŠ” ì—°ì‚°
 void freeLinkedList_h(LinkedList_h *L)
 {
 	ListNode *p;
@@ -8,7 +8,7 @@ void freeLinkedList_h(LinkedList_h *L)
 
 	while (p != NULL)
 	{
-		L->head = p->link; //Çìµå¸¦ µÎ¹øÂ° ³ëµå·Î º¯°æ
+		L->head = p->link; //í—¤ë“œë¥¼ ë‘ë²ˆì§¸ ë…¸ë“œë¡œ ë³€ê²½
 		free(p);
 		p = L->head;
 	}
