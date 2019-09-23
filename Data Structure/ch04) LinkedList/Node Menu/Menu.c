@@ -3,13 +3,13 @@
 void Menu()
 {
 	printf("---------------------------------\n");
-	printf("|   1) »ğÀÔ\t\t\t|\n");
-	printf("|   2) »èÁ¦\t\t\t|\n");
-	printf("|   3) °Ë»ö\t\t\t|\n");
-	printf("|   4) Ãâ·Â\t\t\t|\n");
-	printf("|   5) °³¼ö¼¼±â\t\t\t|\n");
-	printf("|   6) ¸®½ºÆ® ºñ¿ì±â\t\t|\n");
-	printf("|   7) Á¾·á\t\t\t|\n");
+	printf("|   1) ì‚½ì…\t\t\t|\n");
+	printf("|   2) ì‚­ì œ\t\t\t|\n");
+	printf("|   3) ê²€ìƒ‰\t\t\t|\n");
+	printf("|   4) ì¶œë ¥\t\t\t|\n");
+	printf("|   5) ê°œìˆ˜ì„¸ê¸°\t\t\t|\n");
+	printf("|   6) ë¦¬ìŠ¤íŠ¸ ë¹„ìš°ê¸°\t\t|\n");
+	printf("|   7) ì¢…ë£Œ\t\t\t|\n");
 	printf("---------------------------------\n\n");
 }
 
@@ -17,7 +17,7 @@ int GetChoice(void)
 {
 	int choice;
 
-	printf("¿øÇÏ´Â ¸Ş´º¸¦ ¼±ÅÃÇÏ½Ã¿À: ");
+	printf("ì›í•˜ëŠ” ë©”ë‰´ë¥¼ ì„ íƒí•˜ì‹œì˜¤: ");
 	scanf_s("%d", &choice);
 
 	return choice;
@@ -57,8 +57,8 @@ void switchNode(int choice, LinkedList_h *L)
 		exit(0);
 
 	default:
-		printf("¸Ş´º¿¡ ¾ø´Â ÁÖ¹®ÀÔ´Ï´Ù!\n");
-		printf("´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä.\n");
+		printf("ë©”ë‰´ì— ì—†ëŠ” ì£¼ë¬¸ì…ë‹ˆë‹¤!\n");
+		printf("ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”.\n");
 		break;
 	}
 }
