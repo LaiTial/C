@@ -3,13 +3,13 @@
 #include <string.h>
 #include <process.h>
 
-//³ëµå Á¤ÀÇ	
+//ë…¸ë“œ ì •ì˜	
 typedef struct ListNode {
 	char data[4];
 	struct ListNode *link;
 }ListNode;
 
-//³ëµå¸¦ °¡¸£Å°´Â Æ÷ÀÎÅÍ Á¤ÀÇ
+//ë…¸ë“œë¥¼ ê°€ë¥´í‚¤ëŠ” í¬ì¸í„° ì •ì˜
 typedef struct {
 	ListNode *head;
 }LinkedList_h;
