@@ -1,4 +1,4 @@
-//±¸±¸´Ü Ãâ·Â ÇÁ·Î±×·¥
+//goto practice
 
 #include <stdio.h>
 
