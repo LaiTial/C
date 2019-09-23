@@ -4,11 +4,11 @@ void deleteNode(LinkedList_h *L, ListNode *p)
 {
 	ListNode *pre;
 
-	//1) list°¡ ºñ¾ú´Ù. Áö¿ï ³ëµå°¡ ¾ø´Ù.
+	//1) listê°€ ë¹„ì—ˆë‹¤. ì§€ìš¸ ë…¸ë“œê°€ ì—†ë‹¤.
 	if (L->head == NULL || p == NULL)
 		return;
 
-	//2) ¸Ç ¾ÕÀ» »èÁ¦ÇÏÀÚ.
+	//2) ë§¨ ì•ì„ ì‚­ì œí•˜ì.
 	if (L->head == p)
 	{
 		L->head = p->link;
@@ -16,7 +16,7 @@ void deleteNode(LinkedList_h *L, ListNode *p)
 		return;
 	}
 
-	//3) Áß°£ÀÌ³ª ¸Ç µÚ¸¦ »èÁ¦ÇÏÀÚ.
+	//3) ì¤‘ê°„ì´ë‚˜ ë§¨ ë’¤ë¥¼ ì‚­ì œí•˜ì.
 	{
 		pre = L->head;
 
@@ -59,5 +59,5 @@ void count(LinkedList_h *L)
 		p = p->link;
 	}
 
-	printf("³ëµåÀÇ °³¼ö: %d\n", count);
+	printf("ë…¸ë“œì˜ ê°œìˆ˜: %d\n", count);
 }
