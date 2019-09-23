@@ -1,6 +1,6 @@
 #include "Struct.h"
 
-//³ëµå¸¦ °¡¸£Å°´Â Æ÷ÀÎÅÍ¸¦ ¸¸µç´Ù.
+//ë…¸ë“œë¥¼ ê°€ë¥´í‚¤ëŠ” í¬ì¸í„°ë¥¼ ë§Œë“ ë‹¤.
 LinkedList_h* createdLinkedList_h(void)
 {
 	LinkedList_h *L;
@@ -10,7 +10,7 @@ LinkedList_h* createdLinkedList_h(void)
 	return L;
 }
 
-//ÇöÀç ³ëµå¸¦ ¸ğµÎ Ãâ·Â
+//í˜„ì¬ ë…¸ë“œë¥¼ ëª¨ë‘ ì¶œë ¥
 void printList(LinkedList_h *L)
 {
 	ListNode *p;
