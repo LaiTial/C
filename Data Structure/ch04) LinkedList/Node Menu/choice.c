@@ -2,21 +2,21 @@
 
 void ChoiceOne(LinkedList_h *L, char *x)
 {
-	printf("¾î¶² ¹®ÀÚ¸¦ »ğÀÔÇÏ½Ã°Ú½À´Ï±î? ");
+	printf("ì–´ë–¤ ë¬¸ìë¥¼ ì‚½ì…í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ");
 	scanf_s(" %s", x, 10);
 	insertLastNode(L, x); getchar();
 }
 
 void ChoiceTwo(LinkedList_h *L, char *x)
 {
-	printf("¾î¶² ¹®ÀÚ¸¦ »èÁ¦ÇÏ½Ã°Ú½À´Ï±î? ");
+	printf("ì–´ë–¤ ë¬¸ìë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? ");
 	scanf_s(" %s", x, 10);
 	deleteNode(L, searchNode(L, x)); getchar();
 }
 
 void ChoiceThird(LinkedList_h *L, char *x)
 {
-	printf("¾î¶² ¹®ÀÚ¸¦ °Ë»öÇÏ½Ã°Ú½À´Ï±î? ");
+	printf("ì–´ë–¤ ë¬¸ìë¥¼ ê²€ìƒ‰í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ");
 	scanf_s(" %s", x, 10);
-	printf("%s´Â %p¹øÁö¿¡ ÀúÀåµÇ¾î ÀÖ½À´Ï´Ù.\n", x, searchNode(L, x)); getchar();
+	printf("%sëŠ” %pë²ˆì§€ì— ì €ì¥ë˜ì–´ ìˆìŠµë‹ˆë‹¤.\n", x, searchNode(L, x)); getchar();
 }
