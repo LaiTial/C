@@ -6,9 +6,9 @@ int* getNumber()
 {
 	int *NumberPointer, i=1;
 
-	printf("Á¤·ÄÇÒ ¼ıÀÚÀÇ °³¼ö: ");
+	printf("ì •ë ¬í•  ìˆ«ìì˜ ê°œìˆ˜: ");
 	scanf_s("%d", &size);
-	printf("Á¤·Ä ¼ıÀÚ ÀÔ·Â: ");
+	printf("ì •ë ¬ ìˆ«ì ì…ë ¥: ");
 	NumberPointer = (int*)malloc(sizeof(int)*size);
 
 	for (int i = 0; i < size; i++)
@@ -25,9 +25,9 @@ int partition(int a[], int begin, int end)
 	int temp;
 	L = begin;
 	R = end;
-	pivot = (int)((begin + end) / 2.0); // Áß°£¿¡ À§Ä¡ÇÑ ¿ø¼Ò¸¦ ÇÇº¿ ¿ø¼Ò·Î ¼±ÅÃ
+	pivot = (int)((begin + end) / 2.0); // ì¤‘ê°„ì— ìœ„ì¹˜í•œ ì›ì†Œë¥¼ í”¼ë´‡ ì›ì†Œë¡œ ì„ íƒ
 
-	printf("\n [Äü Á¤·Ä %d´Ü°è : pivot=%d ] \n", ++i, a[pivot]);
+	printf("\n [í€µ ì •ë ¬ %dë‹¨ê³„ : pivot=%d ] \n", ++i, a[pivot]);
 
 	while (L < R)
 	{
@@ -91,11 +91,11 @@ void bubbleSort(int a[])
 			}
 		}
 
-		printf("\n [¹öºí Á¤·Ä %d´Ü°è] \n", size-i);
+		printf("\n [ë²„ë¸” ì •ë ¬ %dë‹¨ê³„] \n", size-i);
 		for (int t = 0; t < size; t++) printf(" %d", a[t]);
 		printf("\n");
 	}
-	printf("±³È¯È½¼ö: %d\n", howDoSwap);
+	printf("êµí™˜íšŸìˆ˜: %d\n", howDoSwap);
 }
 
 int main(void)
@@ -105,7 +105,7 @@ int main(void)
 	listQ = getNumber();
 	listB = (int*)malloc(sizeof(int) * size);
 
-	printf("\n [ ÃÊ±â »óÅÂ ] \n");
+	printf("\n [ ì´ˆê¸° ìƒíƒœ ] \n");
 	for (int i = 0; i < size; i++)
 	{
 		printf(" %d", listQ[i]);
@@ -114,7 +114,7 @@ int main(void)
 	printf("\n");
 
 	quickSort(listQ, 0, size - 1);
-	printf("±³È¯È½¼ö: %d\n", howDoSwap);
+	printf("êµí™˜íšŸìˆ˜: %d\n", howDoSwap);
 
 	printf("\n");
 	bubbleSort(listB);
