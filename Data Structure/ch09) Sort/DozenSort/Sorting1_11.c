@@ -1,3 +1,7 @@
+/*
+SelectionSort And BubbleSort And InsertSort And QuickSort
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 int i = 0;
@@ -8,7 +12,7 @@ int partition(int a[], int begin, int end, int size)
 	int temp;
 	L = begin;
 	R = end;
-	pivot = (int)((begin + end) / 2.0); // Áß°£¿¡ À§Ä¡ÇÑ ¿ø¼Ò¸¦ ÇÇº¿ ¿ø¼Ò·Î ¼±ÅÃ
+	pivot = (int)((begin + end) / 2.0); // ì¤‘ê°„ì— ìœ„ì¹˜í•œ ì›ì†Œë¥¼ í”¼ë´‡ ì›ì†Œë¡œ ì„ íƒ
 
 	printf("pass %d:", ++i);
 
