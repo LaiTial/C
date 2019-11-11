@@ -110,7 +110,7 @@ void InsertSort(int a[])
 		}
 		a[loc + 1] = sortItem;
 
-		printf("pass %d : ", i + 1);
+		printf("pass %d : ", i);
 		for (int t = 0; t < size; t++) printf(" %d", a[t]);
 		printf("\n");
 	}
