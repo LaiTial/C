@@ -4,61 +4,49 @@ SelectionSort And BubbleSort And InsertSort And QuickSort
 
 #include <stdio.h>
 #include <stdlib.h>
-int i = 0;
+int s = 1, size = 7;
 
-int partition(int a[], int begin, int end, int size)
+int partition(int a[], int begin, int end)
 {
-	int pivot, L, R, t;
-	int temp;
-	L = begin;
-	R = end;
-	pivot = (int)((begin + end) / 2.0); // 중간에 위치한 원소를 피봇 원소로 선택
+	int i = begin-1;
+	int pivot = a[end]; // 끝에 위치한 원소를 피봇 원소로 선택
 
-	printf("pass %d:", ++i);
-
-	while (L < R)
+	for (int j = begin; j <= end-1; j++)
 	{
-		while ((a[L] < a[pivot]) && (L < R))
-			L++;
-		while ((a[R] >= a[pivot]) && (L < R))
-			R--;
-		if (L < R)
+		if (a[j] <= pivot)
 		{
-			temp = a[L];
-			a[L] = a[R];
-			a[R] = temp;
+			++i;
 
-
-			if (L == pivot)
-				pivot = R;
+			int temp = a[i];
+			a[i] = a[j];
+			a[j] = temp;
 		}
-	}
-
-	if (pivot != R)
-	{
-		temp = a[pivot];
-		a[pivot] = a[R];
-		a[R] = temp;
 
 	}
-	for (t = 0; t < size; t++) printf(" %d", a[t]);
 
+	int temp = a[i+1];
+	a[i+1] = a[end];
+	a[end] = temp;
+
+	printf("pass %d : ", s++);
+	for (int t = 0; t < size; t++) printf(" %d", a[t]);
 	printf("\n");
-	return R;
+
+	return i+1;
 }
 
-void quickSort(int a[], int begin, int end, int size)
+void quickSort(int a[], int begin, int end)
 {
 	int p;
 	if (begin < end)
 	{
-		p = partition(a, begin, end, size);
-		quickSort(a, begin, p - 1, size);
-		quickSort(a, p + 1, end, size);
+		p = partition(a, begin, end);
+		quickSort(a, begin, p - 1);
+		quickSort(a, p + 1, end);
 	}
 }
 
-void bubbleSort(int a[], int size)
+void bubbleSort(int a[])
 {
 	for (int i = size - 1; i >= 0; i--)
 	{
@@ -78,32 +66,32 @@ void bubbleSort(int a[], int size)
 	}
 }
 
-void SelectionSort(int a[], int size)
+void SelectionSort(int a[])
 {
-	int min;
+	int max;
 
-	for (int i = 0; i < size-1; i++)
+	for (int i = size-1; i > 0; i--)
 	{
-		min = i;
+		max = i;
 
-		for (int j = i+1; j < size; j++)
+		for (int j = i-1; j >=0; j--)
 		{
-			if (a[min] > a[j])
+			if (a[max] < a[j])
 			{
-				min=j;
+				max=j;
 			}
 		}
 		int temp = a[i];
-		a[i] = a[min];
-		a[min] = temp;
+		a[i] = a[max];
+		a[max] = temp;
 
-		printf("pass %d : ", i+1);
+		printf("pass %d : ", size-i);
 		for (int t = 0; t < size; t++) printf(" %d", a[t]);
 		printf("\n");
 	}
 }
 
-void InsertSort(int a[], int size)
+void InsertSort(int a[])
 {
 	int loc, sortItem;
 
@@ -143,16 +131,16 @@ int main(void)
 	printf("\n");
 
 	printf("\n<Selection Sort>\n");
-	SelectionSort(sortNumSel, 7);
+	SelectionSort(sortNumSel);
 
 	printf("\n<Bubble Sort>\n");
-	bubbleSort(sortNumBubb, 7);
+	bubbleSort(sortNumBubb);
 
 	printf("\n<Insertion Sort>\n");
-	InsertSort(sortNumInsert, 7);
+	InsertSort(sortNumInsert);
 
 	printf("\n<Quick Sort>\n");
-	quickSort(sortNumQ, 0, size - 1, 7);
+	quickSort(sortNumQ, 0, size-1);
 
 	return 0;
 }
