@@ -1,4 +1,4 @@
-//»ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ Æ¯Á¤ÇÑ Á¤¼öÀÇ ÀÚ¸®¼ö¸¦ ¹Ý´ë·Î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+//ì‚¬ìš©ìžê°€ ìž…ë ¥í•œ íŠ¹ì •í•œ ì •ìˆ˜ì˜ ìžë¦¬ìˆ˜ë¥¼ ë°˜ëŒ€ë¡œ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
 
 #include <stdio.h>
 
@@ -6,7 +6,7 @@ int main(void)
 {
 	int op, quo = 1, temp;
 
-	printf("Á¤¼öÀÇ °ªÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("ì •ìˆ˜ì˜ ê°’ì„ ìž…ë ¥í•˜ì‹œì˜¤: ");
 	scanf("%d", &op);
 
 	while (1)
