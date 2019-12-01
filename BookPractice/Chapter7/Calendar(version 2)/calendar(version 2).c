@@ -1,7 +1,7 @@
-//´Ş·Â Ãâ·Â
+//ë‹¬ë ¥ ì¶œë ¥
 
 #include <stdio.h>
-#define START_DAY 3 //Ã¹¹øÂ° ³¯ÀÌ ¼ö¿äÀÏ
+#define START_DAY 3 //ì²«ë²ˆì§¸ ë‚ ì´ ìˆ˜ìš”ì¼
 #define DAYS_OF_MONTH 31
 
 int main(void)
@@ -10,7 +10,7 @@ int main(void)
 	
 
 	printf("===============================\n");
-	puts("ÀÏ  ¿ù  È­  ¼ö  ¸ñ  ±İ  Åä ");
+	puts("ì¼  ì›”  í™”  ìˆ˜  ëª©  ê¸ˆ  í†  ");
 	printf("===============================\n");
 
 	for ( i = 0; i < START_DAY; i++)
