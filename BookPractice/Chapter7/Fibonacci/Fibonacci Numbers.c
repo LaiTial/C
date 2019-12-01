@@ -1,4 +1,4 @@
-//���� ������ �Է¹޾Ƽ� �Է¹��� �ױ��� �Ǻ���ġ ������ ����ϴ� ���α׷�
+//항의 개수를 입력받아서 입력받은 항까지 피보나치 수열을 출력하는 프로그램
 
 #include <stdio.h>
 
@@ -7,7 +7,7 @@ int main(void)
 	int a, b, c;
 	int op, i;
 
-	printf("�� ��° �ױ��� ���ұ��? ");
+	printf("몇 번째 항까지 구할까요? ");
 	scanf("%d", &op);
 	
 	a = 0, b = 1;
