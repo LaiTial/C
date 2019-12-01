@@ -9,7 +9,7 @@ int s = 1, size = 7;
 int partition(int a[], int begin, int end)
 {
 	int i = begin - 1;
-	int pivot = a[end]; // ³¡¿¡ À§Ä¡ÇÑ ¿ø¼Ò¸¦ ÇÇº¿ ¿ø¼Ò·Î ¼±ÅÃ
+	int pivot = a[end]; // ëì— ìœ„ì¹˜í•œ ì›ì†Œë¥¼ í”¼ë´‡ ì›ì†Œë¡œ ì„ íƒ
 
 	for (int j = begin; j <= end - 1; j++)
 	{
