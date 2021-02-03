@@ -8,7 +8,7 @@ int main(void)
 	int key, result;
 	int grade[SIZE] = { 2, 6, 11, 13, 18, 20, 22, 27, 29, 30, 34, 38, 41, 42, 45, 47 };
 
-	printf("Å½»öÇÒ °ªÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("íƒìƒ‰í•  ê°’ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf_s("%d", &key);
 
 	result = binary_search(grade, SIZE, key);
@@ -16,12 +16,12 @@ int main(void)
 
 	if (result == -1)
 	{
-		printf("Å½»ö ½ÇÆĞ. °ªÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.\n");
+		printf("íƒìƒ‰ ì‹¤íŒ¨. ê°’ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n");
 	}
 
 	else
 	{
-		printf("Å½»ö °á°ú: %d\n", result);
+		printf("íƒìƒ‰ ê²°ê³¼: %d\n", result);
 	}
 
 	return 0;
