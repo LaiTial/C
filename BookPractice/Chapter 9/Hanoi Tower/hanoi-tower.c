@@ -4,13 +4,13 @@ void hanoi_tower(int n, char from, char temp, char to)
 {
 	if (n==1)
 	{
-		printf("¿øÆÇ 1À» %c¿¡¼­ %cÀ¸·Î ¿Å±ä´Ù.\n",from, to);
+		printf("ì›íŒ 1ì„ %cì—ì„œ %cìœ¼ë¡œ ì˜®ê¸´ë‹¤.\n",from, to);
 	}
 
 	else
 	{
 		hanoi_tower(n - 1, from, to, temp);
-		printf("¿øÆÇ %dÀ» %c¿¡¼­ %cÀ¸·Î ¿Å±ä´Ù.\n", n, from, to);
+		printf("ì›íŒ %dì„ %cì—ì„œ %cìœ¼ë¡œ ì˜®ê¸´ë‹¤.\n", n, from, to);
 		hanoi_tower(n - 1, temp, from, to);
 		
 	}
@@ -20,7 +20,7 @@ int main(void)
 {
 	int n;
 
-	printf("¸î °³ÀÇ ¿øÆÇÀ» ¿Å±æ±î¿ä? ");
+	printf("ëª‡ ê°œì˜ ì›íŒì„ ì˜®ê¸¸ê¹Œìš”? ");
 	scanf("%d", &n);
 
 	hanoi_tower(n, 'A', 'B', 'C');
