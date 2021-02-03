@@ -1,4 +1,4 @@
-//°£´ÜÇÑ µ¿Àü ´øÁö±â °ÔÀÓ ½Ã¹Ä·¹ÀÌ¼Ç
+//ê°„ë‹¨í•œ ë™ì „ ë˜ì§€ê¸° ê²Œì„ ì‹œë®¬ë ˆì´ì…˜
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,7 +15,7 @@ int main(void)
 
 	do
 	{
-		printf("¾Õ¸é ¶Ç´Â µŞ¸é(1 ¶Ç´Â 0): ");
+		printf("ì•ë©´ ë˜ëŠ” ë’·ë©´(1 ë˜ëŠ” 0): ");
 		scanf_s("%d", &cho);
 
 		srand((unsigned)time(NULL));
@@ -23,15 +23,15 @@ int main(void)
 		
 		if (cho == a)
 		{
-			printf("¸Â¾Ò½À´Ï´Ù.\n");
+			printf("ë§ì•˜ìŠµë‹ˆë‹¤.\n");
 		}
 
 		else
 		{
-			printf("Æ²·È½À´Ï´Ù.\n");
+			printf("í‹€ë ¸ìŠµë‹ˆë‹¤.\n");
 		}
 
-		printf("°è¼ÓÇÏ½Ã°Ú½À´Ï±î?(y ¶Ç´Â n): ");
+		printf("ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(y ë˜ëŠ” n): ");
 		scanf(" %c", &alo);
 
 		puts("");
