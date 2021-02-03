@@ -13,7 +13,7 @@ int main(void)
 
 	get_kcm_gcd(x, y, &lcm, &gcd);
 
-	printf("µÎ ¼öÀÇ ÃÖ´ë°ø¾à¼ö: %d, ÃÖ¼Ò°ø¹è¼ö: %d\n", gcd, lcm);
+	printf("ë‘ ìˆ˜ì˜ ìµœëŒ€ê³µì•½ìˆ˜: %d, ìµœì†Œê³µë°°ìˆ˜: %d\n", gcd, lcm);
 	
 	return 0;
 }
