@@ -21,7 +21,7 @@ int main(void)
 	puts("");
 
 	range(seat, SIZE);
-	printf("�ּҰ�: %d\n\n", seat[0]);
+	printf("ÃÖ¼Ò°ª: %d\n\n", seat[0]);
 
 	return 0;
 }
