@@ -46,11 +46,11 @@ void print_array(double * grades, double *scores, int size)
 {
 	int i;
 
-	printf("          <4.3¸¸Á¡ ÆòÁ¡>      <100Á¡ ¸¸Á¡ ÆòÁ¡>\n");
+	printf("          <4.3ë§Œì  í‰ì >      <100ì  ë§Œì  í‰ì >\n");
 
 	for (i = 0; i < size; i++)
 	{
-		printf("ÇÐ»ý #%02d      %.2f                 %.2f\n", i + 1, grades[i], scores[i]);
+		printf("í•™ìƒ #%02d      %.2f                 %.2f\n", i + 1, grades[i], scores[i]);
 	}
 
 	puts("");
