@@ -26,7 +26,7 @@ int get_num(void)
 {
 	int ten;
 
-	printf("10Áø¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("10ÃÃ¸Â¼Ã¶Â¸Â¦ Ã€Ã”Â·Ã‚Ã‡ÃÂ½ÃƒÂ¿Ã€: ");
 	scanf_s("%d", &ten);
 
 	return ten;
