@@ -38,7 +38,7 @@ int choice(void)
 {
 	int n;
 
-	printf("¸Ş´º¸¦ ¼±ÅÃÇÏ½Ã¿À: ÀúÃà(1), ÀÎÃâ(2): ");
+	printf("ë©”ë‰´ë¥¼ ì„ íƒí•˜ì‹œì˜¤: ì €ì¶•(1), ì¸ì¶œ(2): ");
 	scanf_s("%d", &n);
 
 	return n;
@@ -48,12 +48,12 @@ void save(void)
 {
 	int amount;
 
-	printf("ÀúÃàÇÒ ±İ¾×: ");
+	printf("ì €ì¶•í•  ê¸ˆì•¡: ");
 	scanf_s("%d", &amount);
 
 	h_m_money += amount;
 
-	printf("ÇöÀç ÀÜ¾×Àº %d¿øÀÔ´Ï´Ù.\n", h_m_money);
+	printf("í˜„ì¬ ì”ì•¡ì€ %dì›ì…ë‹ˆë‹¤.\n", h_m_money);
 
 	puts("");
 
@@ -64,12 +64,12 @@ void draw(void)
 {
 	int amount;
 
-	printf("ÀÎÃâÇÒ ±İ¾×: ");
+	printf("ì¸ì¶œí•  ê¸ˆì•¡: ");
 	scanf_s("%d", &amount);
 
 	h_m_money -= amount;
 
-	printf("ÇöÀç ÀÜ¾×Àº %d¿øÀÔ´Ï´Ù.\n", h_m_money);
+	printf("í˜„ì¬ ì”ì•¡ì€ %dì›ì…ë‹ˆë‹¤.\n", h_m_money);
 
 	puts("");
 
