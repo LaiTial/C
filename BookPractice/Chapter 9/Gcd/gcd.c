@@ -10,10 +10,10 @@ int main(void)
 {
 	int x, y;
 
-	printf("µÎ ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf("%d %d", &x, &y);
 
-	printf("ÃÖ´ë°ø¾à¼ö: %d\n", gcd(x, y));
+	printf("ìµœëŒ€ê³µì•½ìˆ˜: %d\n", gcd(x, y));
 
 
 	return 0;
