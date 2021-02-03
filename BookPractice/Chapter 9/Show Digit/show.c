@@ -6,7 +6,7 @@ int main(void)
 {
 	int n;
 
-	printf("а╓╪Ж╦╕ ют╥бго╫ц©ю: ");
+	printf("ц│б╓б╪ц╤б╦б╕ ц─ц■б╥ц┌ц┤ц▐б╫ц┐б©ц─: ");
 	scanf_s("%d", &n);
 
 	show_digit(n);
