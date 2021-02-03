@@ -6,13 +6,13 @@ int main(void)
 {
 	int n, result, i;
 
-	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À:");
+	printf("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤:");
 	scanf("%d", &n);
 
 	for ( i = 1; i <= n; i++)
 	{
 		result = factorial(i);
-		printf("%d!´Â %dÀÔ´Ï´Ù.\n", i, result);
+		printf("%d!ëŠ” %dìž…ë‹ˆë‹¤.\n", i, result);
 	}
 
 
