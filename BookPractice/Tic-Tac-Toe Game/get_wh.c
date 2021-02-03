@@ -6,7 +6,7 @@ void get_wh(char board[3][3])
 {
 	int x, y;
 
-	printf("(x, y)��ǥ: ");
+	printf("(x, y)ÁÂÇ¥: ");
 	scanf_s("%d %d", &x, &y);
 
 	check(x, y, board);
@@ -33,7 +33,7 @@ void check(int x, int y, char board[][3])
 
 	else
 	{
-		printf("�߸��� ��ġ�Դϴ�.\n");
+		printf("Àß¸øµÈ À§Ä¡ÀÔ´Ï´Ù.\n");
 
 	}
 }
