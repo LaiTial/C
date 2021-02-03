@@ -23,18 +23,18 @@ void print_re(int n, int t)
 {
 	if (t == 2)
 	{
-		printf("%dÀº ¼Ò¼öÀÔ´Ï´Ù.\n", n);
+		printf("%dì€ ì†Œìˆ˜ì…ë‹ˆë‹¤.\n", n);
 	}
 
 	else
-		printf("%d´Â ¼Ò¼ö°¡ ¾Æ´Õ´Ï´Ù.\n", n);
+		printf("%dëŠ” ì†Œìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.\n", n);
 }
 
 int get_integer(void)
 {
 	int x;
 
-	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf("%d", &x);
 
 	return x;
