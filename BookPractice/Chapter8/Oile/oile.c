@@ -7,10 +7,10 @@ int main(void)
 {
 	int h_mu;
 
-	printf("¾îµğ±îÁö °è»êÇÒ±î¿ä: ");
+	printf("ì–´ë””ê¹Œì§€ ê³„ì‚°í• ê¹Œìš”: ");
 	scanf_s("%d", &h_mu);
 
-	printf("¿ÀÀÏ·¯ÀÇ ¼ö´Â %fÀÔ´Ï´Ù.\n", oile(h_mu));
+	printf("ì˜¤ì¼ëŸ¬ì˜ ìˆ˜ëŠ” %fì…ë‹ˆë‹¤.\n", oile(h_mu));
 
 	return 0;
 }
