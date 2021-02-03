@@ -6,19 +6,19 @@ int sum(int, ...);
 int main(void)
 {
 	int answer = sum(4, 4, 3, 2, 1);
-	printf("ÇÕÀº %dÀÔ´Ï´Ù.\n", answer);
+	printf("í•©ì€ %dì…ë‹ˆë‹¤.\n", answer);
 	
 	return 0;
 }
 
-int sum(int num, ...) //°¡º¯ ¸Å°³ º¯¼ö Ç¥½Ã
+int sum(int num, ...) //ê°€ë³€ ë§¤ê°œ ë³€ìˆ˜ í‘œì‹œ
 {
 	int answer = 0;
 	va_list argptr;
 
-	va_start(argptr, num); //°¡º¯ ¸Å°³ º¯¼ö ±â´É ½ÃÀÛ
+	va_start(argptr, num); //ê°€ë³€ ë§¤ê°œ ë³€ìˆ˜ ê¸°ëŠ¥ ì‹œì‘
 	for (; num > 0; num--)
-		answer += va_arg(argptr, int); //ÀÎ¼ö ÃßÃâ
+		answer += va_arg(argptr, int); //ì¸ìˆ˜ ì¶”ì¶œ
 
 	va_end(argptr);
 
