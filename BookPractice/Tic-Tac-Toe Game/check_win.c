@@ -32,8 +32,8 @@ void check_win(char board[][3])
 
 	if (win != '\0')
 	{
-		printf("\nÃàÇÏÇÕ´Ï´Ù!\n");
-		printf("¿ì½ÂÀÚ´Â %cÀÔ´Ï´Ù!\n", win);
+		printf("\nì¶•í•˜í•©ë‹ˆë‹¤!\n");
+		printf("ìš°ìŠ¹ìëŠ” %cì…ë‹ˆë‹¤!\n", win);
 
 		exit(0);
 	}
